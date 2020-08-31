@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="myCss.css">
-        <script src="myJs.js"></script>
-      
-   
+    <script src="myJs.js"></script>
     <title>Document</title>
 </head>
-<body  >
+<body id="mybody" >
     <div id="myback">
     <table class="calc" cellpadding=4>
         <tr><td colspan=3><input class="calc" id="screen" type="text"><td><h3> calculator</h3></td></td></tr>
@@ -39,11 +37,16 @@
         <td><input class="btn btn-secondary" type="button" value='+' onclick="buttonActions(this.value,screen.value)"></td>
         </tr>
         <tr>
-        <td colspan=3><input class="btn btn-success" type="button" value='=' onclick="equal(screen.value)"></td><td><button class="btn btn-danger" onclick="exit()">exit</button></td></tr>
+        <td colspan=3><input class="btn btn-success" type="button" value='=' onclick="equal(screen.value)"></td>
+        <td><button class="btn btn-danger" onclick="exit()">exit</button></td>
+        </tr >
+        <tr >
+        <td><select name="" id="sel" onchange="changefont()">
+            <option value="xx-large">xx-large</option><option value="medium" >medium</option>
+            <option value="xx-small">xx-small</option>
+        </select></td>
+       </tr>
         </table>
-
     </div>
-
-        
 </body>
 </html>

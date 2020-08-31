@@ -27,5 +27,12 @@
              function exit(params) {
                 window.close()
              }
+              function changefont() {
+                 var m = document.getElementById('sel').value
+                 document.getElementById('mybody').style.fontSize = m
+              }
+         
+            
+             
 
         
