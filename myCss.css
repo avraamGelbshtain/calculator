@@ -1,0 +1,26 @@
+table.calc
+{
+text-align: center;
+border: 5pc;
+border-color: black;
+width: 100%;
+}
+
+input.calc  {
+ width: 100%;
+ margin: 5px;
+ }
+
+ #myback{
+     width: 400px;
+     height: 300px;
+     background-color:lightgoldenrodyellow;
+     border: 2px solid black;
+     margin: auto;
+ }
+ td{
+     width: 25%;
+ }
+ input{
+     width: 100%;
+ }
